@@ -1,7 +1,9 @@
 import React from "react";
 
-function CategoryTitle() {
-  return <div>CategoryTitle</div>;
+function CategoryTitle({ title }) {
+  return (
+    <h2 className="uppercase text-mainWhite text-h2 font-bolder">{title}</h2>
+  );
 }
 
 export default CategoryTitle;
