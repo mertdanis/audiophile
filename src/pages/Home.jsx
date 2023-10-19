@@ -1,17 +1,20 @@
 import React from "react";
-import Navbar from "../components/Navbar";
+
+import ContentCol from "../components/ContentCol";
 import Hero from "../components/Hero";
-import AboutCompany from "../components/AboutCompany";
 
 function Home() {
   return (
-    <div>
-      <header>
-        <Navbar />
-        <Hero />
-      </header>
-      <AboutCompany />
-    </div>
+    <>
+      <Hero />
+      <div className="flex gap-[30px] my-[120px] justify-center ">
+        <ContentCol title={"headphones"}>
+          <img src="/my-project/src/assets/shared/desktop/image-category-thumbnail-headphones.png" />
+        </ContentCol>
+        <ContentCol title={"speakers"}></ContentCol>
+        <ContentCol title={"earphones"}></ContentCol>
+      </div>
+    </>
   );
 }
 

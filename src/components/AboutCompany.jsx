@@ -1,9 +1,11 @@
 import React from "react";
 
+import bestGear from "../../public/shared/desktop/image-best-gear.jpg";
+
 function AboutCompany() {
   return (
-    <div className="flex gap-6">
-      <div className="flex flex-col gap-6">
+    <div className="flex gap-[200px] items-center">
+      <div className="flex flex-col gap-[32px] w-[445px]">
         <h2 className="text-h2 font-bolder text-mainBlack uppercase">
           Bringing you the <span className="text-mainOrange">best</span> audio
           gear
@@ -18,10 +20,7 @@ function AboutCompany() {
         </p>
       </div>
 
-      <img
-        src="/my-project/src/assets/shared/desktop/image-best-gear.jpg"
-        alt="image-best-gear"
-      />
+      <img src={bestGear} />
     </div>
   );
 }

@@ -2,7 +2,9 @@ import React from "react";
 
 function CategoryTitle({ title }) {
   return (
-    <h2 className="uppercase text-mainWhite text-h2 font-bolder">{title}</h2>
+    <h2 className="uppercase text-center text-mainWhite text-h2 font-bolder">
+      {title}
+    </h2>
   );
 }
 

@@ -3,3 +3,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+a:hover {
+  color: orange;
+  transition: 300ms;
+}
