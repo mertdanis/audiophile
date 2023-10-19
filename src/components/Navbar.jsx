@@ -3,7 +3,13 @@ import { NavLink, Link } from "react-router-dom";
 import Categories from "./Categories";
 import Logo from "./Logo";
 
+import { useData } from "../context/MainContext";
+
 function Navbar() {
+  const { dispatch, data } = useData();
+
+  console.log(data);
+
   return (
     <div className=" px-[20vw] bg-[#0E0E0E] min-h-[10vh]text-white flex justify-between  items-center p-6 ">
       <Logo />
@@ -16,6 +22,11 @@ function Navbar() {
         viewBox="0 0 24 20"
         fill="none"
         className="cursor-pointer"
+        onClick={() => {
+          dispatch({
+            type: "cart/add",
+          });
+        }}
       >
         <path
           fillRule="evenodd"
