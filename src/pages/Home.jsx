@@ -1,6 +1,6 @@
 import React from "react";
 
-import ContentCol from "../components/Content_3";
+import Content_3 from "../components/Content_3";
 import Hero from "../components/Hero";
 import Button from "../components/Button";
 
@@ -15,11 +15,11 @@ function Home() {
 
       <main className="">
         <div className="flex gap-[30px] my-[120px]  ">
-          <ContentCol title={"headphones"}>
+          <Content_3 title={"headphones"}>
             <img src="/my-project/src/assets/shared/desktop/image-category-thumbnail-headphones.png" />
-          </ContentCol>
-          <ContentCol title={"speakers"}></ContentCol>
-          <ContentCol title={"earphones"}></ContentCol>
+          </Content_3>
+          <Content_3 title={"speakers"}></Content_3>
+          <Content_3 title={"earphones"}></Content_3>
         </div>
 
         <div className="flex flex-col gap-[40px]">
