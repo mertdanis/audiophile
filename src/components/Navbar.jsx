@@ -2,9 +2,9 @@ import React from "react";
 import { NavLink, Link } from "react-router-dom";
 import Categories from "./Categories";
 
-function Header() {
+function Navbar() {
   return (
-    <div className="bg-black text-white flex justify-between px-[165px] items-center p-6">
+    <div className="bg-black min-h-[10vh]text-white flex justify-between px-[165px] items-center p-6 ">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="143"
@@ -47,4 +47,4 @@ function Header() {
   );
 }
 
-export default Header;
+export default Navbar;

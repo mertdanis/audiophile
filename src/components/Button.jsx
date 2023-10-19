@@ -5,7 +5,7 @@ function Button({ children, className, type }) {
         type === 1 ? "bg-mainOrange text-mainWhite" : ""
       } ${type === 2 ? "border-[1px] border-mainBlack  text-mainBlack" : ""} ${
         type === 3
-          ? "text-mainWhite opacity-50 flex items-center gap-2 w-fit h-fit"
+          ? "text-mainBlack tracking-[1px] opacity-50 text-subTitle flex items-center gap-2 w-fit h-fit font-bolder"
           : ""
       }`}
     >
@@ -21,7 +21,7 @@ function Button({ children, className, type }) {
           <path
             d="M1.32178 1L6.32178 6L1.32178 11"
             stroke="#D87D4A"
-            stroke-width="2"
+            strokeWidth="2"
           />
         </svg>
       ) : (
