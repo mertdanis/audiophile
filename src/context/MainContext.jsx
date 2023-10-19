@@ -3,7 +3,7 @@ import { createContext, useContext, useReducer } from "react";
 const MainProvider = createContext();
 
 const initialState = {
-  cart: [{}],
+  cart: [],
 };
 
 function MainContext({ children }) {
@@ -16,12 +16,6 @@ function MainContext({ children }) {
         };
 
       case "cart/del":
-        return {
-          ...state,
-          test: "ekle",
-        };
-
-      case "cart/add":
         return {
           ...state,
           test: "ekle",

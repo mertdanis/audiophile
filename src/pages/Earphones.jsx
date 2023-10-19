@@ -13,16 +13,18 @@ function Earphones() {
   return (
     <div>
       <CategoryTitle title={"earphones"} />
-      <ContentDirection
-        direction={"right"}
-        isNew={true}
-        title={"YX1 WIRELESS EARPHONES"}
-        text={
-          "Tailor your listening experience with bespoke dynamic drivers from the new YX1 Wireless Earphones. Enjoy incredible high-fidelity sound even in noisy environments with its active noise cancellation feature."
-        }
-      >
-        <img src={yx1} />
-      </ContentDirection>
+      <div className="mt-[50px]">
+        <ContentDirection
+          direction={"right"}
+          isNew={true}
+          title={"YX1 WIRELESS EARPHONES"}
+          text={
+            "Tailor your listening experience with bespoke dynamic drivers from the new YX1 Wireless Earphones. Enjoy incredible high-fidelity sound even in noisy environments with its active noise cancellation feature."
+          }
+        >
+          <img src={yx1} />
+        </ContentDirection>
+      </div>
       <div className="relative  flex gap-[30px] my-[120px]  ">
         <Content_3 title={"headphones"}>
           <img className="h-[160px] absolute -top-2" src={headphoneImg} />

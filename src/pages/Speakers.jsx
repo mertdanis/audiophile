@@ -6,6 +6,10 @@ import zx9 from "../assets/product-zx9-speaker/desktop/image-category-page-previ
 import zx7 from "../assets/product-zx7-speaker/desktop/image-category-page-preview.jpg";
 import Content_3 from "../components/Content_3";
 
+import headphoneImg from "../assets/shared/desktop/image-category-thumbnail-headphones.png";
+import speakersImg from "../assets/shared/desktop/image-category-thumbnail-speakers.png";
+import earphonesImg from "../assets/shared/desktop/image-category-thumbnail-earphones.png";
+
 function Speakers() {
   return (
     <div>
@@ -33,10 +37,16 @@ function Speakers() {
           <img src={zx7} />
         </ContentDirection>
       </div>
-      <div className="flex gap-6">
-        <Content_3 title={"headphones"}></Content_3>
-        <Content_3 title={"speakers"}></Content_3>
-        <Content_3 title={"earphones"}></Content_3>
+      <div className="relative  flex gap-[30px] my-[120px]  ">
+        <Content_3 title={"headphones"}>
+          <img className="h-[160px] absolute -top-2" src={headphoneImg} />
+        </Content_3>
+        <Content_3 title={"speakers"}>
+          <img className=" absolute -top-2 h-[146px]" src={speakersImg} />
+        </Content_3>
+        <Content_3 title={"earphones"}>
+          <img className=" absolute -top-2 h-[161px]" src={earphonesImg} />
+        </Content_3>
       </div>
     </div>
   );
