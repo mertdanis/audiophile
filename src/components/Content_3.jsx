@@ -6,7 +6,7 @@ import speakersImg from "../assets/shared/desktop/image-category-thumbnail-speak
 import earphonesImg from "../assets/shared/desktop/image-category-thumbnail-earphones.png";
 import { Link } from "react-router-dom";
 
-function ContentCol({ title, children }) {
+function Content_3({ title, children }) {
   return (
     <div className=" hover:-translate-y-2 transition duration-500 flex flex-col items-center mt-[50px] mb-[50px] w-[350px] h-[204px] rounded-[8px] bg-mainLightWhite">
       <img className=" h-[160px]" src={speakersImg} alt="" />
@@ -17,4 +17,4 @@ function ContentCol({ title, children }) {
   );
 }
 
-export default ContentCol;
+export default Content_3;
