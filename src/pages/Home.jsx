@@ -8,18 +8,26 @@ import zx9 from "../assets/home/desktop/image-speaker-zx9.png";
 import zx7 from "../assets/home/desktop/image-speaker-zx7.jpg";
 import yx1 from "../assets/home/desktop/image-earphones-yx1.jpg";
 
+import headphoneImg from "../assets/shared/desktop/image-category-thumbnail-headphones.png";
+import speakersImg from "../assets/shared/desktop/image-category-thumbnail-speakers.png";
+import earphonesImg from "../assets/shared/desktop/image-category-thumbnail-earphones.png";
+
 function Home() {
   return (
     <>
       <Hero />
 
-      <main className="">
-        <div className="flex gap-[30px] my-[120px]  ">
+      <main>
+        <div className="relative  flex gap-[30px] my-[120px]  ">
           <Content_3 title={"headphones"}>
-            <img src="/my-project/src/assets/shared/desktop/image-category-thumbnail-headphones.png" />
+            <img className="h-[160px] absolute -top-2" src={headphoneImg} />
           </Content_3>
-          <Content_3 title={"speakers"}></Content_3>
-          <Content_3 title={"earphones"}></Content_3>
+          <Content_3 title={"speakers"}>
+            <img className=" absolute -top-2 h-[146px]" src={speakersImg} />
+          </Content_3>
+          <Content_3 title={"earphones"}>
+            <img className=" absolute -top-2 h-[161px]" src={earphonesImg} />
+          </Content_3>
         </div>
 
         <div className="flex flex-col gap-[40px]">

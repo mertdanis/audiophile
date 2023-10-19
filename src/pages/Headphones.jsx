@@ -7,6 +7,10 @@ import xx59 from "../assets/product-xx59-headphones/desktop/image-category-page-
 import Content_3 from "../components/Content_3";
 import ContentDirection from "../components/ContentDirection";
 
+import headphoneImg from "../assets/shared/desktop/image-category-thumbnail-headphones.png";
+import speakersImg from "../assets/shared/desktop/image-category-thumbnail-speakers.png";
+import earphonesImg from "../assets/shared/desktop/image-category-thumbnail-earphones.png";
+
 function Headphones() {
   return (
     <div>
@@ -46,12 +50,16 @@ function Headphones() {
         </ContentDirection>
       </div>
 
-      <div className="flex gap-[30px] my-[120px]  ">
+      <div className="relative  flex gap-[30px] my-[120px]  ">
         <Content_3 title={"headphones"}>
-          <img src="/my-project/src/assets/shared/desktop/image-category-thumbnail-headphones.png" />
+          <img className="h-[160px] absolute -top-2" src={headphoneImg} />
         </Content_3>
-        <Content_3 title={"speakers"}></Content_3>
-        <Content_3 title={"earphones"}></Content_3>
+        <Content_3 title={"speakers"}>
+          <img className=" absolute -top-2 h-[146px]" src={speakersImg} />
+        </Content_3>
+        <Content_3 title={"earphones"}>
+          <img className=" absolute -top-2 h-[161px]" src={earphonesImg} />
+        </Content_3>
       </div>
     </div>
   );

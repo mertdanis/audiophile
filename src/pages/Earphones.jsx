@@ -5,6 +5,10 @@ import yx1 from "../assets/product-yx1-earphones/desktop/image-category-page-pre
 import ContentDirection from "../components/ContentDirection";
 import Content_3 from "../components/Content_3";
 
+import headphoneImg from "../assets/shared/desktop/image-category-thumbnail-headphones.png";
+import speakersImg from "../assets/shared/desktop/image-category-thumbnail-speakers.png";
+import earphonesImg from "../assets/shared/desktop/image-category-thumbnail-earphones.png";
+
 function Earphones() {
   return (
     <div>
@@ -19,10 +23,16 @@ function Earphones() {
       >
         <img src={yx1} />
       </ContentDirection>
-      <div className="flex gap-6">
-        <Content_3 title={"headphones"}></Content_3>
-        <Content_3 title={"speakers"}></Content_3>
-        <Content_3 title={"earphones"}></Content_3>
+      <div className="relative  flex gap-[30px] my-[120px]  ">
+        <Content_3 title={"headphones"}>
+          <img className="h-[160px] absolute -top-2" src={headphoneImg} />
+        </Content_3>
+        <Content_3 title={"speakers"}>
+          <img className=" absolute -top-2 h-[146px]" src={speakersImg} />
+        </Content_3>
+        <Content_3 title={"earphones"}>
+          <img className=" absolute -top-2 h-[161px]" src={earphonesImg} />
+        </Content_3>
       </div>
     </div>
   );

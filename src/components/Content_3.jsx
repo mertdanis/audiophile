@@ -8,11 +8,17 @@ import { Link } from "react-router-dom";
 
 function Content_3({ title, children }) {
   return (
-    <div className=" hover:-translate-y-2 transition duration-500 flex flex-col items-center mt-[50px] mb-[50px] w-[350px] h-[204px] rounded-[8px] bg-mainLightWhite">
-      <img className=" h-[160px]" src={speakersImg} alt="" />
-      <h6 className="text-h6 text-mainBlack uppercase font-bolder">{title}</h6>
+    <div className="  transition duration-500 flex flex-col justify-center items-center mt-[50px] mb-[50px] w-[350px] h-[204px] rounded-[8px] bg-mainLightWhite">
+      {children}
 
-      <Button type={3}>shop</Button>
+      <div className="flex flex-col items-center gap-6 mt-[30px]">
+        <h6 className="text-h6 tracking-[1.286px] text-mainBlack uppercase font-bolder">
+          {title}
+        </h6>
+        <Link to={`/${title}`}>
+          <Button type={3}>shop</Button>
+        </Link>
+      </div>
     </div>
   );
 }
