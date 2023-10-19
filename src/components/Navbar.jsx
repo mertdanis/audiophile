@@ -5,7 +5,7 @@ import Logo from "./Logo";
 
 function Navbar() {
   return (
-    <div className=" bg-[#0E0E0E] min-h-[10vh]text-white flex justify-between  items-center p-6 ">
+    <div className=" px-[20vw] bg-[#0E0E0E] min-h-[10vh]text-white flex justify-between  items-center p-6 ">
       <Logo />
       <Categories />
 

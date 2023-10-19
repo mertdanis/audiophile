@@ -6,7 +6,7 @@ import bgImg from "../assets/home/desktop/image-hero.jpg";
 function Hero() {
   return (
     <div
-      className="flex flex-col justify-center gap-[24px] h-[90vh] bg-cover bg-no-repeat"
+      className="flex flex-col  justify-center gap-[24px] h-[90vh] bg-cover bg-no-repeat"
       style={{ backgroundImage: `url(${bgImg})` }}
     >
       <div className="w-[25%] ">

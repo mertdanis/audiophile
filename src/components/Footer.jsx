@@ -5,8 +5,8 @@ import Logo from "./Logo";
 
 function Footer() {
   return (
-    <div className="px-[165px] py-[75px] bg-blue-500 text-white relative">
-      <div className="flex justify-between ">
+    <div className="px-[20vw] py-[75px] bg-mainDark  text-white relative">
+      <div className="flex justify-between items-center ">
         <Logo />
         <Categories />
       </div>
@@ -19,7 +19,7 @@ function Footer() {
         </p>
         <p>Copyright 2021. All Rights Reserved</p>
       </div>
-      <div className="absolute flex items-center right-[165px] gap-3 top-[205px] ">
+      <div className="absolute flex items-center right-[165px] gap-4 top-[205px] ">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="24"
@@ -59,7 +59,6 @@ function Footer() {
           />
         </svg>
       </div>
-      <Button type={3}>shop</Button>
     </div>
   );
 }

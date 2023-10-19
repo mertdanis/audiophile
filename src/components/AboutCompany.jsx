@@ -4,7 +4,7 @@ import bestGear from "../../public/shared/desktop/image-best-gear.jpg";
 
 function AboutCompany() {
   return (
-    <div className="flex gap-[200px] items-center">
+    <div className="flex px-[20vw] gap-[200px] items-center my-[100px]">
       <div className="flex flex-col gap-[32px] w-[445px]">
         <h2 className="text-h2 font-bolder text-mainBlack uppercase">
           Bringing you the <span className="text-mainOrange">best</span> audio
@@ -20,7 +20,7 @@ function AboutCompany() {
         </p>
       </div>
 
-      <img src={bestGear} />
+      <img className="rounded-[8px]" src={bestGear} />
     </div>
   );
 }

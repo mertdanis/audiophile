@@ -7,10 +7,10 @@ import AboutCompany from "../components/AboutCompany";
 
 function Layout() {
   return (
-    <div className="px-[165px] ">
+    <div className="">
       <Navbar />
 
-      <main className=" 	">
+      <main className="px-[20vw] ">
         <Outlet />
       </main>
 
